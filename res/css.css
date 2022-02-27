@@ -1,0 +1,85 @@
+:root {
+	--spacing: 0.5rem;
+	--color-divider: #cadcec;
+	--color-highlight-40: #64c9fe;
+	--color-highlight-50: #1ea2ed;
+	--color-highlight-60: #1995db;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.9em;
+	color: #000000;
+	background-color: #ffffff;
+	margin: 0;
+	padding: 10px 20px 20px 20px;
+
+	background-repeat: no-repeat;
+	background-size: 80px 80px;
+	background-position: 17px 5px;
+}
+
+samp {
+	font-size: 1.3em;
+}
+
+a {
+	color: #000000;
+	background-color: #ffffff;
+}
+
+sup a {
+	text-decoration: none;
+}
+
+hr {
+	margin-left: 90px;
+	height: 1px;
+	color: #000000;
+	background-color: #000000;
+	border: none;
+}
+
+.text {
+	width: 80%;
+	margin-left: 90px;
+	line-height: 140%;
+}
+
+.post {
+	padding: var(--spacing);
+	background: #f1f5f9;
+	border-bottom: 1px solid var(--color-divider);
+}
+.post + .post {
+	border-top: 1px solid #fff;
+}
+.thread {
+	border-radius: 0.5rem;
+	overflow: hidden;
+}
+
+.thread .thread-contents {
+	border: 4px solid var(--color-highlight-60);
+	overflow: hidden;
+}
+
+.thread h2 {
+	color: #fff;
+	font-size: 0.5em;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	padding: calc(4px + var(--spacing));
+	margin-bottom: -4px;
+	background: linear-gradient(
+		180deg,
+		var(--color-highlight-40) 0%,
+		var(--color-highlight-50) 10%,
+		var(--color-highlight-60) 100%
+	);
+}
